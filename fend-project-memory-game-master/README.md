@@ -1,20 +1,12 @@
 # Memory Game Project
 
-## Table of Contents
+This is the course project of Udacity front-end development nenodegree.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+## Download and start
+You can clone or download the project. Then, open the `index.html`, and click the card and the game will start!!!.
 
-## Instructions
+## How to play
+It's the traditional card memory game. Click cards and find the matching pair. After you find all 8 pairs, the game will finish. And also, you can click the refresh button to refresh the game (it will shuffle the cards).
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+## Dependencies
+Front style from 'https://fonts.googleapis.com/css?family=Coda';

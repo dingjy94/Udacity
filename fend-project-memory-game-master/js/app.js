@@ -8,9 +8,8 @@ let time;
  * Create a list that holds all of your cards
  */
 let cards = ["fa fa-diamond", "fa fa-paper-plane-o", "fa fa-anchor", "fa fa-bolt", 
-             "fa fa-cube", "fa fa-anchor", "fa fa-leaf", "fa fa-bicycle",
-             "fa fa-diamond", "fa fa-bomb", "fa fa-leaf", "fa fa-bomb",
-             "fa fa-bolt", "fa fa-bicycle", "fa fa-paper-plane-o", "fa fa-cube"];
+             "fa fa-cube", "fa fa-leaf", "fa fa-bicycle", "fa fa-bomb"];
+cards = cards.concat(cards);
 const deck = document.getElementsByClassName("deck").item(0);
 const restart = document.getElementsByClassName("restart").item(0);
 /*
@@ -87,13 +86,7 @@ function increaseMove() {
 	} else if (moveCount === 30) {
 		appendOStar('second-star');
 		point = 1.0;
-	} else if (moveCount === 35) {
-		appendHalfStar('first-star');
-		point = 0.5;
-	} else if (moveCount === 40) {
-		appendOStar('first-star');
-		point = 0;
-	}
+	} 
 }
 
 function appendHalfStar(index) {
@@ -172,13 +165,13 @@ const popUp = document.getElementsByClassName('pop-up').item(0);
 function gameFinish() {
 	const gameTime = (Date.now() - time) / 1000;
 	// setTimeout(alert, 500, "congratuation, your game time is " + gameTime + " seconds and get " + point + " stars");
-	refresh();
 	document.getElementsByClassName('pop-up-text').item(0).innerHTML = "congratuation, your game time is " + gameTime + " seconds and get " + point + " stars";
 	document.getElementsByClassName('pop-up-button').item(0).addEventListener('click', backToGame);
 	popUp.style.display = "block";
 }
 
 function backToGame() {
+	refresh();
     popUp.style.display = "none";
 }
 
