@@ -1,0 +1,23 @@
+{
+  "name": "frontend-nanodegree-feedreader-master",
+  "version": "1.0.0",
+  "description": "udacity test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dingjy94",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-plugin-jasmine": "^2.10.1",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-jasmine": "^4.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp-eslint": "^4.0.2",
+    "gulp-jasmine-phantom": "^3.0.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
